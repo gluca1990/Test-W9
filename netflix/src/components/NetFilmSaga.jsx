@@ -1,12 +1,13 @@
 import React from "react";
 import {Dropdown} from 'react-bootstrap';
 import NetCreateList from "./NetCreateList";
-export default class NetTVShow extends React.Component {
+export default class NetFilmSaga extends React.Component {
+
     render() {
         return (
             <>
                 <div className="d-flex align-items-center container-fluid p-4 bg-dark">
-                    <h1 className="fs-2 fw-bold text-light">TV Shows</h1>
+                    <h1 className="fs-2 fw-bold text-light">Film Series</h1>
                     <Dropdown >
                         <Dropdown.Toggle variant="dark" id="dropdown-basic">
                             Genres
@@ -19,9 +20,19 @@ export default class NetTVShow extends React.Component {
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
-                <div id ="main" className="container-fluid p-4">
-                    <h2>Trending Now</h2>
-                    <NetCreateList/>
+                <div id ="main" className="container-fluid p-4 my-4">
+                    <h2 className="text-light">Pirates Of The Caribbean</h2>
+                    <NetCreateList key="pirates"/>
+
+                </div>
+                <div id ="main" className="container-fluid p-4 my-4">
+                    <h2 className="text-light">Transformers</h2>
+                    <NetCreateList key="transformers" />
+
+                </div>
+                <div id ="main" className="container-fluid p-4 my-4">
+                    <h2 className="text-light">MCU</h2>
+                    <NetCreateList key="Avengers"/>
 
                 </div>
 

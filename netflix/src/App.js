@@ -1,13 +1,14 @@
 import './App.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 import NetNavbar from './components/NetNavbar';
-import NetTVShow from './components/NetTVShow';
+import NetFilmSaga from './components/NetFilmSaga';
 import NetFooter from './components/NetFooter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark">
       <NetNavbar/>
-      <NetTVShow/>
+      <NetFilmSaga/>
       <NetFooter/>
 
     </div>

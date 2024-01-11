@@ -12,7 +12,7 @@ export default class NetNavbar extends React.Component {
             <Navbar expand="lg" className="bg-dark">
       <Container fluid className="d-flex align-items-center">
         <Navbar.Brand id="logo" href="#home"><img className="w-100"alt="logo" src={Logo}/></Navbar.Brand>
-        <Navbar.Toggle className="text-secondary" aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle variant="light" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className="navLink text-secondary fw-bold fs-6" href="#">Home</Nav.Link>
@@ -22,8 +22,10 @@ export default class NetNavbar extends React.Component {
             <Nav.Link className="navLink text-secondary fw-bold fs-6" href="#">My List</Nav.Link>            
           </Nav>
           <Nav className="ms-auto d-flex align-items-center">
-            <div className="text-secondary fs-6 fw-semibold">KIDS</div>
-            <Nav.Link href="#">TV Shows</Nav.Link>         
+            <i class="bi bi-search text-secondary m-2"></i>
+            <div className="text-secondary fs-6 fw-semibold m-2">KIDS</div>
+            <i class="text-secondary bi bi-bell-fill m-2"></i>
+            <i class="text-secondary bi bi-person-fill m-3 fs-3" ></i>        
           </Nav>
 
         </Navbar.Collapse>
