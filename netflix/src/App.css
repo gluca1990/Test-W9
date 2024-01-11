@@ -1,0 +1,24 @@
+#logo{
+  width: 150px;
+}
+#square{
+  font-size: 90%;
+  border-radius: 0px;
+  border: solid 1px white;
+}
+#dropdown-basic{
+  border-radius: 0px;
+  border: solid 1px white;
+  margin-left: 20px;
+  font-size: 90%;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer button {
+  border: solid 1px white;
+}
+.copyright {
+  font-size: 70%;
+}
