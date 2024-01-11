@@ -1,6 +1,8 @@
 import React from "react";
 import {Dropdown} from 'react-bootstrap';
-import NetCreateList from "./NetCreateList";
+import NetCreateList1 from "./NetCreateList1";
+import NetCreateList2 from "./NetCreateList2";
+import NetCreateList3 from "./NetCreateList3";
 export default class NetFilmSaga extends React.Component {
 
     render() {
@@ -22,17 +24,17 @@ export default class NetFilmSaga extends React.Component {
                 </div>
                 <div id ="main" className="container-fluid p-4 my-4">
                     <h2 className="text-light">Pirates Of The Caribbean</h2>
-                    <NetCreateList key="pirates"/>
+                    <NetCreateList1 key="pirates"/>
 
                 </div>
                 <div id ="main" className="container-fluid p-4 my-4">
                     <h2 className="text-light">Transformers</h2>
-                    <NetCreateList key="transformers" />
+                    <NetCreateList2 key="transformers" />
 
                 </div>
                 <div id ="main" className="container-fluid p-4 my-4">
                     <h2 className="text-light">MCU</h2>
-                    <NetCreateList key="Avengers"/>
+                    <NetCreateList3 key="Avengers"/>
 
                 </div>
 

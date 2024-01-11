@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap';
 
 export default class NetCreateList extends React.Component {
     /* state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=${this.props.key}`} */
-    state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=Pirates`}
+    state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=Avengers`}
     componentDidMount() {
         fetch((this.state.url))
         .then(response => response.json())
@@ -13,15 +13,15 @@ export default class NetCreateList extends React.Component {
     
         render() {
         return (
-            console.dir(this.state.data),
+            console.dir(this.props),
             this.state.data&&( <>
             <Row>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[0].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[1].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[2].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[3].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[4].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[5].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[0].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[1].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[2].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[3].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[4].Poster} alt=""/>
+                <img className="img-fluid col-md-3 col-xs-6 col-lg-2 p-2" src={this.state.data.Search[5].Poster} alt=""/>
             </Row>
             
             </>)
