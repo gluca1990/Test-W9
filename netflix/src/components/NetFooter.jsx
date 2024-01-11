@@ -5,14 +5,14 @@ export default class NetFooter extends React.Component {
     render() {
         return (
             <footer className="bg-dark pt-3">
-                 <div className="row text-center mx-auto mt-5">
+                 <div className="row text-center mx-auto mt-3">
                     <div className="col-6 offset-3">
                         <div className="row">
-                            <div className="col col-12 text-left mb-2">
-                                <i className="fa fa-facebook footer-icon"></i>
-                                <i className="fa fa-instagram footer-icon"></i>
-                                <i className="fa fa-twitter footer-icon"></i>
-                                <i className="fa fa-youtube footer-icon"></i>
+                            <div className="col col-12 text-left mb-5">
+                                <i class="mx-1 text-secondary bi bi-facebook"></i>
+                                <i class="mx-1 text-secondary bi bi-instagram"></i>
+                                <i class="mx-1 text-secondary bi bi-twitter"></i>
+                                <i class="mx-1 text-secondary bi bi-youtube"></i>
                             </div>
                         </div>
                         <div

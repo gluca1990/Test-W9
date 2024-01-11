@@ -2,8 +2,8 @@ import React from "react";
 import { Row } from 'react-bootstrap';
 
 export default class NetCreateList extends React.Component {
-    /* state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=${this.props.key}`} */
-    state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=Avengers`}
+    state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=${this.props.chiave}`}
+  /*   state={url: `http://www.omdbapi.com/?apikey=33fd0420&s=Pirates`} */
     componentDidMount() {
         fetch((this.state.url))
         .then(response => response.json())
