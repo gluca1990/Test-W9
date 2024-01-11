@@ -16,12 +16,12 @@ export default class NetCreateList extends React.Component {
             console.dir(this.state.data),
             this.state.data&&( <>
             <Row>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[0].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[1].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[2].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[3].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[4].Poster} alt=""/>
-                <img className="col-md-3 col-xs-2 col-lg-2 p-1" src={this.state.data.Search[5].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[0].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[1].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[2].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[3].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[4].Poster} alt=""/>
+                <img className="col-md-3 col-xs-2 col-lg-2 p-2" src={this.state.data.Search[5].Poster} alt=""/>
             </Row>
             
             </>)
